@@ -1,3 +1,7 @@
+# To test typical http proxy 
+```
+curl http://localhost:4000/haiku 
+```
 
 # To test websocket
 ```
