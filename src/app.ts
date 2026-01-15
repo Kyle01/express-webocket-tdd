@@ -213,7 +213,7 @@ app.post('/realtime-lava', async (req: Request, res: Response) => {
 
   // Connect to Lava's WebSocket forward, targeting OpenAI Realtime
   const targetUrl = encodeURIComponent('wss://api.openai.com/v1/realtime?model=gpt-4o-realtime-preview-2024-12-17');
-  const wsUrl = `ws://localhost:3001/v1/forward?u=${targetUrl}`;
+  const wsUrl = `ws://localhost:3000/v1/forward?u=${targetUrl}`;
   console.log('Connecting to Lava WebSocket:', wsUrl);
 
   const ws = new WebSocket(wsUrl, {
